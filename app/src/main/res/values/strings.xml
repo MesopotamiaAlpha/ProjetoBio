@@ -6,4 +6,5 @@
 
     <string name="action_settings">Configurações</string>
     <string name="title_activity_familia_atividade">FamiliaAtividade</string>
+    <string name="title_activity_foto_atividade">FotoAtividade</string>
 </resources>

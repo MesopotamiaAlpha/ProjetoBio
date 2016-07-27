@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Teste Foto 1"
-        android:id="@+id/button3"
+        android:id="@+id/btnFoto"
         android:layout_alignBottom="@+id/btnFamilia1"
         android:layout_toEndOf="@+id/textView2" />
 </RelativeLayout>

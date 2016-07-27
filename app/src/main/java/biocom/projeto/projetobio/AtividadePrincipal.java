@@ -28,12 +28,20 @@ public class AtividadePrincipal extends AppCompatActivity
         setSupportActionBar(toolbar);
         //adicionando as funções dos botoes
         Button btnFamilia1 = (Button) findViewById(R.id.btnFamilia1);
+        Button btnFoto = (Button) findViewById(R.id.btnFoto);
 
-
+        //Logo em baixo ele vai chamar a activitity familia
         btnFamilia1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(AtividadePrincipal.this, FamiliaAtividade.class);
+                startActivities(new Intent[]{i});}});
+
+        //Logo em baixo vai chamar a activity Foto
+        btnFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AtividadePrincipal.this, FotoAtividade.class);
                 startActivities(new Intent[]{i});}});
         //Em cima termina a chamada de novas telas
 
