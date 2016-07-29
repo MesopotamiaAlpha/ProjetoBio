@@ -16,7 +16,7 @@
         android:layout_width="62dp"
         android:layout_height="66dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/angrybirds3" />
+        android:src="@drawable/side_nav_bar" />
 
     <TextView
         android:layout_width="match_parent"

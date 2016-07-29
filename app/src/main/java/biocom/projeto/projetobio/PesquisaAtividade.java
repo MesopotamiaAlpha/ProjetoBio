@@ -35,11 +35,16 @@ public class PesquisaAtividade extends AppCompatActivity {
                 lblResultado.setText(variavel);
 
 
-
-                if ("teste"==variavel){
-                    lblResultado.setTextColor(0xffbdbdbd);
-                }else{
-                    lblResultado.setText("Teste sem sucesso");
+                //logo a baixo um teste de pesquisa de algum tipo de planta
+                if (variavel.equals("Planta 1")){
+                    //Muda a variavel para verde
+                    lblResultado.setTextColor(0xff00ff00);
+                }else if(variavel.equals("Planta 2")) {
+                    //Muda variavel para cor verde
+                    lblResultado.setTextColor(0xff00ff00);
+                }else {
+                    lblResultado.setText("Não existe esta planta");
+                    lblResultado.setTextColor(0xffff0033);
                 }
             }
         });
