@@ -1,6 +1,7 @@
 package biocom.projeto.projetobio;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class FamiliaAtividade extends AppCompatActivity {
 
@@ -28,6 +30,12 @@ public class FamiliaAtividade extends AppCompatActivity {
                 startActivities(new Intent[]{i});}});
         //terminado de chamar a tela
 
+
+        //Logo A baixo vou sublinhar a especie
+        TextView lblEspecie = (TextView) findViewById(R.id.lblEspecie);
+        lblEspecie.setPaintFlags(lblEspecie.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
+        //Terminado de sublinhar
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
