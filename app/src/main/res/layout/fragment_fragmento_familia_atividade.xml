@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="biocom.projeto.projetobio.FotoAtividadeFragment"
-    tools:showIn="@layout/activity_foto_atividade">
+    tools:context="biocom.projeto.projetobio.FamiliaAtividade"
+    tools:showIn="@layout/activity_familia_atividade">
 
 
     <ImageView

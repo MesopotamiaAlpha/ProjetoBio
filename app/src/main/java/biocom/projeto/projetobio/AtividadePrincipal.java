@@ -27,11 +27,12 @@ public class AtividadePrincipal extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //adicionando as funções dos botoes
-        Button btnFamilia1 = (Button) findViewById(R.id.btnFamilia1);
+        Button btnFamilia = (Button) findViewById(R.id.btnFamilia);
         Button btnFoto = (Button) findViewById(R.id.btnFoto);
+        Button btnPesquisa = (Button) findViewById(R.id.btnPesquisa);
 
         //Logo em baixo ele vai chamar a activitity familia
-        btnFamilia1.setOnClickListener(new View.OnClickListener() {
+        btnFamilia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(AtividadePrincipal.this, FamiliaAtividade.class);
@@ -43,6 +44,15 @@ public class AtividadePrincipal extends AppCompatActivity
             public void onClick(View v) {
                 Intent i = new Intent(AtividadePrincipal.this, FotoAtividade.class);
                 startActivities(new Intent[]{i});}});
+
+        //Logo em baixo vai chamar a activity Pesquisa
+
+        btnPesquisa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AtividadePrincipal.this, PesquisaAtividade.class);
+                startActivities(new Intent[]{i});}});
+
         //Em cima termina a chamada de novas telas
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

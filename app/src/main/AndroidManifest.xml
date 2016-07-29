@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/angrybirds3"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,6 +21,7 @@
         <activity
             android:name=".FamiliaAtividade"
             android:label="@string/title_activity_familia_atividade"
+            android:parentActivityName=".AtividadePrincipal"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FotoAtividade"
@@ -31,6 +32,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="biocom.projeto.projetobio.AtividadePrincipal" />
         </activity>
+        <activity
+            android:name=".PesquisaAtividade"
+            android:label="@string/title_activity_pesquisa_atividade"
+            android:parentActivityName=".AtividadePrincipal"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

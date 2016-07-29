@@ -23,8 +23,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Familia 1"
-        android:id="@+id/btnFamilia1"
+        android:text="Teste Texto"
+        android:id="@+id/btnFamilia"
         android:layout_marginTop="55dp"
         android:layout_below="@+id/textView2"
         android:layout_toStartOf="@+id/textView2" />
@@ -32,17 +32,18 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Familia 2"
-        android:id="@+id/btnFamilia2"
-        android:layout_below="@+id/btnFamilia1"
-        android:layout_alignStart="@+id/btnFamilia1"
-        android:layout_marginTop="51dp" />
+        android:text="Teste Pesquisa"
+        android:id="@+id/btnPesquisa"
+        android:layout_below="@+id/btnFamilia"
+        android:layout_alignStart="@+id/btnFamilia"
+        android:layout_marginTop="51dp"
+        android:layout_alignEnd="@+id/btnFamilia" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Teste Foto 1"
         android:id="@+id/btnFoto"
-        android:layout_alignBottom="@+id/btnFamilia1"
+        android:layout_alignBottom="@+id/btnFamilia"
         android:layout_toEndOf="@+id/textView2" />
 </RelativeLayout>
