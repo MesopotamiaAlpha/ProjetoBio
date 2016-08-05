@@ -41,7 +41,7 @@
                 android:id="@+id/textView5"
                 android:singleLine="false"
                 android:textSize="20dp"
-                android:textStyle="italic"
+                android:textStyle=""
                 android:layout_alignParentTop="true"
                 android:layout_alignEnd="@+id/textView9" />
 
@@ -109,7 +109,8 @@
                 android:singleLine="false"
                 android:textSize="20dp"
                 android:layout_below="@+id/lblEspecie"
-                android:layout_toEndOf="@+id/textView4" />
+                android:layout_toEndOf="@+id/textView4"
+                android:textStyle="italic" />
 
             <TextView
                 android:layout_width="wrap_content"
